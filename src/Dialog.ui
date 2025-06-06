@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MClip</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnClipboard">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>剪切板</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnFavorite">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>收藏</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSetting">
+       <property name="minimumSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page_0">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="tableClipboard">
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>时间</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>内容</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>操作</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_1">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="tableFavorite">
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>内容</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>操作</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>新增：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnAddFavorite">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>确定</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>清除数据</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>12</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="minimumSize">
+                  <size>
+                   <width>300</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除剪切板历史记录：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnClearHistory">
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>300</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除收藏记录：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnClearFavorite">
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>清除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

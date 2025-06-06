@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>image/MClipboard.png</file>
+        <file>image/Settings.png</file>
+    </qresource>
+</RCC>
